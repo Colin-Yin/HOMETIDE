@@ -1,0 +1,28 @@
+section .content-wrapper {
+  box-sizing: border-box;
+  background-color: #fff;
+}
+section .content-wrapper .body {
+  padding: 0px 15px 20px 15px;
+}
+section .content-wrapper .body .title {
+  border-bottom: 1px solid #d1d1d1;
+  height: 70px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-top: 20px;
+}
+section .content-wrapper .body .title .title-back {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 auto;
+  width: 110px;
+}
+section .content-wrapper .body .title .more {
+  text-align: right;
+  float: right;
+  height: 28px;
+  line-height: 28px;
+}
+/*# sourceMappingURL=wrapper-model-mobile.css.map */

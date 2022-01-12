@@ -2,30 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, intial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable:no">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable:no">
     <title>家页</title>
     <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.0/css/bootstrap.css" rel="stylesheet">
+    <!--icon图标库-->
     <link rel="stylesheet" href="./iconfont/all.css">
+    <!--公共默认样式-->
     <link rel="stylesheet" href="./public/base.css">
+    <!--公用头部-->
     <link rel="stylesheet" href="./public/head-nav.css">
+    <!--公用底部-->
     <link rel="stylesheet" href="./public/foot.css">
-    <link rel="stylesheet" href="css/index/index-mobile.css">
-    <link rel="stylesheet" href="css/index/wrapper-model-mobile.css">
-    <link rel="stylesheet" href="css/index/fast-alerts-mobile.css">
-    <link rel="stylesheet" href="css/index/industry-alerts-mobile.css">
-    <link rel="stylesheet" href="css/index/knowledge-mobile.css">
-    <link rel="stylesheet" href="css/index/subject-mobile.css">
+    <!--主页css-->
+    <link rel="stylesheet" href="css/main-page-mobile/index-mobile.css">
+    <!--快讯,业界资讯,专题,资讯外部容器css-->
+    <link rel="stylesheet" href="css/main-page-mobile/wrapper-model-mobile.css">
+    <!--快讯css-->
+    <link rel="stylesheet" href="css/main-page-mobile/fast-alerts-mobile.css">
+    <!--业界资讯css-->
+    <link rel="stylesheet" href="css/main-page-mobile/industry-alerts-mobile.css">
+    <!--智库css-->
+    <link rel="stylesheet" href="css/main-page-mobile/knowledge-mobile.css">
+    <!--专题css-->
+    <link rel="stylesheet" href="css/main-page-mobile/subject-mobile.css">
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/Mock.js/1.0.0/mock-min.js"></script>
     <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.0/js/bootstrap.js"></script>
     <link href="https://cdn.bootcdn.net/ajax/libs/Swiper/3.4.0/css/swiper.css" rel="stylesheet">
     <script src="https://cdn.bootcdn.net/ajax/libs/Swiper/3.4.0/js/swiper.js"></script>
+    <script type="text/javascript" src="./plugins/Mock/index.js"></script>
+    <!--顶部大轮播框ajax-->
+    <script type="text/javascript" src="./js/main-page-mobile/top-big-banner.js"></script>
+    <!--顶部小轮播图ajax-->
+    <script type="text/javascript" src="./js/main-page-mobile/top-small-banner.js"></script>
+    <!--底部轮播图ajax-->
+    <script type="text/javascript" src="./js/main-page-mobile/bottom-banner.js"></script>
+    <!--快讯ajax-->
+    <script type="text/javascript" src="./js/alerts/fast-alerts.js"></script>
+    <!--业界资讯ajax-->
+    <script type="text/javascript" src="./js/alerts/industry-alerts.js"></script>
+    <!--专题ajax-->
+    <script type="text/javascript" src="./js/alerts/subject-alerts.js"></script>
+    <!--智库ajax-->
+    <script type="text/javascript" src="./js/alerts/knowledge.js"></script>
     <script type="text/javascript" src="./plugins/zepto/zepto.js"></script>
     <script type="text/javascript" src="./plugins/zepto/touch.js"></script>
     <script type="text/javascript" src="./js/industry-dropdown.js"></script>
 </head>
 <body>
-    <div id="mobile">
+    <div id="main">
 
         <header class="clearfix">
             <div class="navbar navbar-fixed-top navbar-default">
@@ -85,7 +110,7 @@
                         <div class="col-md-12 col-xs-12 col-sm-12">
                             <div class="swiper-container swiper_1 radius">
                                 <div class="swiper-wrapper">
-                                    <div role="group" aria-label="1/5" class="swiper-slide radius">
+                                    <!--<div role="group" aria-label="1/5" class="swiper-slide radius">
                                         <img src="img/mobile/section/slider_top_1/1.jpg" alt=""/>
                                         <div class="text">
                                             <p> 2021年中国装配式内装修行业发展趋势报告 </p>
@@ -114,7 +139,7 @@
                                         <div class="text">
                                             <p> 2021年中国装配式内装修行业发展趋势报告 </p>
                                         </div>
-                                    </div>
+                                    </div>-->
                                 </div>
                                 <div class="swiper-pagination">
                                 </div>
@@ -131,7 +156,7 @@
                         <div class="col-md-12 col-xs-12 col-sm-12">
                             <div class="swiper-container swiper_2">
                                 <div class="swiper-wrapper radius">
-                                    <div role="group" aria-label="1/3" class="swiper-slide">
+                                    <!--<div role="group" aria-label="1/3" class="swiper-slide">
                                         <a href="#javascript:;">
                                             <img class="radius" src="img/mobile/section/slider_top_1/1.jpg" alt=""/>
                                         </a>
@@ -160,16 +185,15 @@
                                         <a href="#javascript:;">
                                             <img class="radius" src="img/mobile/section/slider_top_1/1.jpg" alt=""/>
                                         </a>
-                                    </div>
+                                    </div>-->
                                 </div>
-                                <!--<div class="swiper-pagination"></div>-->
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!--资讯-->
+            <!--快讯-->
             <div class="content main_title">
                 <div class="container radius content-wrapper">
                     <div class="row">
@@ -178,7 +202,7 @@
                                 <div class="body">
                                     <div class="title">
                                         <div class="more">
-                                            <a href="#javascript:;">更多&gt;</a>
+                                            <a href="./fast-alerts-mobile.html">更多&gt;</a>
                                         </div>
                                         <div class="title-back">
                                             <a href="#javascript:;">
@@ -190,7 +214,7 @@
                                     <div class="alerts-content">
                                         <!--资讯链接列表-->
                                         <div class="alerts-list">
-                                            <div class="item">
+                                            <!--<div class="item">
                                                 <a href="#javascript:;" class="alerts-link">
                                                     <div class="link-inner">
                                                         <div class="fast">
@@ -211,261 +235,7 @@
                                                         </div>
                                                     </div>
                                                 </a>
-
-                                            </div>
-                                            <div class="item">
-                                                <a href="#javascript:;" class="alerts-link">
-                                                    <div class="link-inner">
-                                                        <div class="fast">
-                                                            <div class="fast-title">
-                                                                <div class="title-img">
-                                                                    <img
-                                                                        src="./img/mobile/section/alerts/alertsLinkLogo/1.png"
-                                                                        alt="">
-                                                                </div>
-                                                                <span class="title-text">建材产业动向</span>
-                                                                <span class="time">6小时前</span>
-                                                            </div>
-                                                            <div class="fast-content radius">
-                                                                <span>
-                                                                    名家汇转让名家汇交通科技51%股份，震有科技接盘
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-
-                                            </div>
-                                            <div class="item">
-                                                <a href="#javascript:;" class="alerts-link">
-                                                    <div class="link-inner">
-                                                        <div class="fast">
-                                                            <div class="fast-title">
-                                                                <div class="title-img">
-                                                                    <img
-                                                                        src="./img/mobile/section/alerts/alertsLinkLogo/1.png"
-                                                                        alt="">
-                                                                </div>
-                                                                <span class="title-text">建材产业动向</span>
-                                                                <span class="time">6小时前</span>
-                                                            </div>
-                                                            <div class="fast-content radius">
-                                                                <span>
-                                                                    名家汇转让名家汇交通科技51%股份，震有科技接盘
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-
-                                            </div>
-                                            <div class="item">
-                                                <a href="#javascript:;" class="alerts-link">
-                                                    <div class="link-inner">
-                                                        <div class="fast">
-                                                            <div class="fast-title">
-                                                                <div class="title-img">
-                                                                    <img
-                                                                        src="./img/mobile/section/alerts/alertsLinkLogo/1.png"
-                                                                        alt="">
-                                                                </div>
-                                                                <span class="title-text">建材产业动向</span>
-                                                                <span class="time">6小时前</span>
-                                                            </div>
-                                                            <div class="fast-content radius">
-                                                                <span>
-                                                                    名家汇转让名家汇交通科技51%股份，震有科技接盘
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-
-                                            </div>
-                                            <div class="item">
-                                                <a href="#javascript:;" class="alerts-link">
-                                                    <div class="link-inner">
-                                                        <div class="fast">
-                                                            <div class="fast-title">
-                                                                <div class="title-img">
-                                                                    <img
-                                                                        src="./img/mobile/section/alerts/alertsLinkLogo/1.png"
-                                                                        alt="">
-                                                                </div>
-                                                                <span class="title-text">建材产业动向</span>
-                                                                <span class="time">6小时前</span>
-                                                            </div>
-                                                            <div class="fast-content radius">
-                                                                <span>
-                                                                    名家汇转让名家汇交通科技51%股份，震有科技接盘
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-
-                                            </div>
-                                            <div class="item">
-                                                <a href="#javascript:;" class="alerts-link">
-                                                    <div class="link-inner">
-                                                        <div class="fast">
-                                                            <div class="fast-title">
-                                                                <div class="title-img">
-                                                                    <img
-                                                                        src="./img/mobile/section/alerts/alertsLinkLogo/1.png"
-                                                                        alt="">
-                                                                </div>
-                                                                <span class="title-text">建材产业动向</span>
-                                                                <span class="time">6小时前</span>
-                                                            </div>
-                                                            <div class="fast-content radius">
-                                                                <span>
-                                                                    名家汇转让名家汇交通科技51%股份，震有科技接盘
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-
-                                            </div>
-                                            <div class="item">
-                                                <a href="#javascript:;" class="alerts-link">
-                                                    <div class="link-inner">
-                                                        <div class="fast">
-                                                            <div class="fast-title">
-                                                                <div class="title-img">
-                                                                    <img
-                                                                        src="./img/mobile/section/alerts/alertsLinkLogo/1.png"
-                                                                        alt="">
-                                                                </div>
-                                                                <span class="title-text">建材产业动向</span>
-                                                                <span class="time">6小时前</span>
-                                                            </div>
-                                                            <div class="fast-content radius">
-                                                                <span>
-                                                                    名家汇转让名家汇交通科技51%股份，震有科技接盘
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-
-                                            </div>
-                                            <div class="item">
-                                                <a href="#javascript:;" class="alerts-link">
-                                                    <div class="link-inner">
-                                                        <div class="fast">
-                                                            <div class="fast-title">
-                                                                <div class="title-img">
-                                                                    <img
-                                                                        src="./img/mobile/section/alerts/alertsLinkLogo/1.png"
-                                                                        alt="">
-                                                                </div>
-                                                                <span class="title-text">建材产业动向</span>
-                                                                <span class="time">6小时前</span>
-                                                            </div>
-                                                            <div class="fast-content radius">
-                                                                <span>
-                                                                    名家汇转让名家汇交通科技51%股份，震有科技接盘
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-
-                                            </div>
-                                            <div class="item">
-                                                <a href="#javascript:;" class="alerts-link">
-                                                    <div class="link-inner">
-                                                        <div class="fast">
-                                                            <div class="fast-title">
-                                                                <div class="title-img">
-                                                                    <img
-                                                                        src="./img/mobile/section/alerts/alertsLinkLogo/1.png"
-                                                                        alt="">
-                                                                </div>
-                                                                <span class="title-text">建材产业动向</span>
-                                                                <span class="time">6小时前</span>
-                                                            </div>
-                                                            <div class="fast-content radius">
-                                                                <span>
-                                                                    名家汇转让名家汇交通科技51%股份，震有科技接盘
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-
-                                            </div>
-                                            <div class="item">
-                                                <a href="#javascript:;" class="alerts-link">
-                                                    <div class="link-inner">
-                                                        <div class="fast">
-                                                            <div class="fast-title">
-                                                                <div class="title-img">
-                                                                    <img
-                                                                        src="./img/mobile/section/alerts/alertsLinkLogo/1.png"
-                                                                        alt="">
-                                                                </div>
-                                                                <span class="title-text">建材产业动向</span>
-                                                                <span class="time">6小时前</span>
-                                                            </div>
-                                                            <div class="fast-content radius">
-                                                                <span>
-                                                                    名家汇转让名家汇交通科技51%股份，震有科技接盘
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-
-                                            </div>
-                                            <div class="item">
-                                                <a href="#javascript:;" class="alerts-link">
-                                                    <div class="link-inner">
-                                                        <div class="fast">
-                                                            <div class="fast-title">
-                                                                <div class="title-img">
-                                                                    <img
-                                                                        src="./img/mobile/section/alerts/alertsLinkLogo/1.png"
-                                                                        alt="">
-                                                                </div>
-                                                                <span class="title-text">建材产业动向</span>
-                                                                <span class="time">6小时前</span>
-                                                            </div>
-                                                            <div class="fast-content radius">
-                                                                <span>
-                                                                    名家汇转让名家汇交通科技51%股份，震有科技接盘
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-
-                                            </div>
-                                            <div class="item">
-                                                <a href="#javascript:;" class="alerts-link">
-                                                    <div class="link-inner">
-                                                        <div class="fast">
-                                                            <div class="fast-title">
-                                                                <div class="title-img">
-                                                                    <img
-                                                                        src="./img/mobile/section/alerts/alertsLinkLogo/1.png"
-                                                                        alt="">
-                                                                </div>
-                                                                <span class="title-text">建材产业动向</span>
-                                                                <span class="time">6小时前</span>
-                                                            </div>
-                                                            <div class="fast-content radius">
-                                                                <span>
-                                                                    名家汇转让名家汇交通科技51%股份，震有科技接盘
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-
-                                            </div>
+                                            </div>-->
                                         </div>
                                     </div>
                                 </div>
@@ -567,7 +337,7 @@
                                     </div>
                                     <!--业界资讯容器-->
                                     <ul class="media-list industry-alerts-wrapper">
-                                        <li class="media">
+                                       <!-- <li class="media">
                                             <a href="information-article-mobile.html">
                                                 <div class="media-left media-img radius">
                                                     <img class="media-object"
@@ -578,84 +348,12 @@
                                                     <div class="media-time">2022-01-11 16:54:00</div>
                                                 </div>
                                             </a>
-                                        </li>
-                                        <li class="media">
-                                            <div class="media-left media-img radius">
-                                                <a href="#javascript:;">
-                                                    <img class="media-object"
-                                                         src="./img/mobile/section/industry-alerts/1.gif" alt="">
-                                                </a>
-                                            </div>
-                                            <div class="media-body media-text">
-                                                <h4 class="media-heading">家页观察 | 世界500强巨头跨界，防水行业进入战国时代</h4>
-                                                <div class="media-time">2022-01-11 16:54:00</div>
-                                            </div>
-                                        </li>
-                                        <li class="media">
-                                            <div class="media-left media-img radius">
-                                                <a href="#javascript:;">
-                                                    <img class="media-object"
-                                                         src="./img/mobile/section/industry-alerts/1.gif" alt="">
-                                                </a>
-                                            </div>
-                                            <div class="media-body media-text">
-                                                <h4 class="media-heading">家页观察 | 世界500强巨头跨界，防水行业进入战国时代</h4>
-                                                <div class="media-time">2022-01-11 16:54:00</div>
-                                            </div>
-                                        </li>
-                                        <li class="media">
-                                            <div class="media-left media-img radius">
-                                                <a href="#javascript:;">
-                                                    <img class="media-object"
-                                                         src="./img/mobile/section/industry-alerts/1.gif" alt="">
-                                                </a>
-                                            </div>
-                                            <div class="media-body media-text">
-                                                <h4 class="media-heading">家页观察 | 世界500强巨头跨界，防水行业进入战国时代</h4>
-                                                <div class="media-time">2022-01-11 16:54:00</div>
-                                            </div>
-                                        </li>
-                                        <li class="media">
-                                            <div class="media-left media-img radius">
-                                                <a href="#javascript:;">
-                                                    <img class="media-object"
-                                                         src="./img/mobile/section/industry-alerts/1.gif" alt="">
-                                                </a>
-                                            </div>
-                                            <div class="media-body media-text">
-                                                <h4 class="media-heading">家页观察 | 世界500强巨头跨界，防水行业进入战国时代</h4>
-                                                <div class="media-time">2022-01-11 16:54:00</div>
-                                            </div>
-                                        </li>
-                                        <li class="media">
-                                            <div class="media-left media-img radius">
-                                                <a href="#javascript:;">
-                                                    <img class="media-object"
-                                                         src="./img/mobile/section/industry-alerts/1.gif" alt="">
-                                                </a>
-                                            </div>
-                                            <div class="media-body media-text">
-                                                <h4 class="media-heading">家页观察 | 世界500强巨头跨界，防水行业进入战国时代</h4>
-                                                <div class="media-time">2022-01-11 16:54:00</div>
-                                            </div>
-                                        </li>
-                                        <li class="media">
-                                            <div class="media-left media-img radius">
-                                                <a href="#javascript:;">
-                                                    <img class="media-object"
-                                                         src="./img/mobile/section/industry-alerts/1.gif" alt="">
-                                                </a>
-                                            </div>
-                                            <div class="media-body media-text">
-                                                <h4 class="media-heading">家页观察 | 世界500强巨头跨界，防水行业进入战国时代</h4>
-                                                <div class="media-time">2022-01-11 16:54:00</div>
-                                            </div>
-                                        </li>
+                                        </li>-->
                                     </ul>
                                     <!--    业界资讯全部跳转链接按钮-->
                                     <div class="foot-link">
                                         <div class="all">
-                                            <a href="#javascript:;">
+                                            <a href="information-mobile.html">
                                                 全部
                                             </a>
                                         </div>
@@ -686,7 +384,7 @@
                                     </div>
                                     <!--    专题容器subject-->
                                     <div class="subject-wrapper">
-                                        <div class="subject-list">
+                                        <!--<div class="subject-list">
                                             <div class="item">
                                                 <div class="subject-title">
                                                     <a href="#javascript:;">
@@ -699,77 +397,7 @@
                                                     </a>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="subject-list">
-                                            <div class="item">
-                                                <div class="subject-title">
-                                                    <a href="#javascript:;">
-                                                        <img src="img/mobile/section/subject/title/1.jpg" alt="">
-                                                    </a>
-                                                </div>
-                                                <div class="subject-content-img radius">
-                                                    <a href="#javascript:;">
-                                                        <img src="img/mobile/section/subject/content/1.jpg" alt="">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="subject-list">
-                                            <div class="item">
-                                                <div class="subject-title">
-                                                    <a href="#javascript:;">
-                                                        <img src="img/mobile/section/subject/title/1.jpg" alt="">
-                                                    </a>
-                                                </div>
-                                                <div class="subject-content-img radius">
-                                                    <a href="#javascript:;">
-                                                        <img src="img/mobile/section/subject/content/1.jpg" alt="">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="subject-list">
-                                            <div class="item">
-                                                <div class="subject-title">
-                                                    <a href="#javascript:;">
-                                                        <img src="img/mobile/section/subject/title/1.jpg" alt="">
-                                                    </a>
-                                                </div>
-                                                <div class="subject-content-img radius">
-                                                    <a href="#javascript:;">
-                                                        <img src="img/mobile/section/subject/content/1.jpg" alt="">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="subject-list">
-                                            <div class="item">
-                                                <div class="subject-title">
-                                                    <a href="#javascript:;">
-                                                        <img src="img/mobile/section/subject/title/1.jpg" alt="">
-                                                    </a>
-                                                </div>
-                                                <div class="subject-content-img radius">
-                                                    <a href="#javascript:;">
-                                                        <img src="img/mobile/section/subject/content/1.jpg" alt="">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="subject-list">
-                                            <div class="item">
-                                                <div class="subject-title">
-                                                    <a href="#javascript:;">
-                                                        <img src="img/mobile/section/subject/title/1.jpg" alt="">
-                                                    </a>
-                                                </div>
-                                                <div class="subject-content-img radius">
-                                                    <a href="#javascript:;">
-                                                        <img src="img/mobile/section/subject/content/1.jpg" alt="">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        </div>-->
                                     </div>
                                 </div>
                             </div>
@@ -785,7 +413,7 @@
                         <div class="col-md-12 col-xs-12 col-sm-12">
                             <div class="swiper-container swiper_3">
                                 <div class="swiper-wrapper radius">
-                                    <div role="group" aria-label="1/3" class="swiper-slide">
+                                    <!--<div role="group" aria-label="1/3" class="swiper-slide">
                                         <img class="radius" src="img/mobile/section/slider_top_1/1.jpg" alt=""/>
                                     </div>
                                     <div role="group" aria-label="2/3" class="swiper-slide">
@@ -793,7 +421,7 @@
                                     </div>
                                     <div role="group" aria-label="3/3" class="swiper-slide">
                                         <img class="radius" src="img/mobile/section/slider_top_1/1.jpg" alt=""/>
-                                    </div>
+                                    </div>-->
                                 </div>
                                 <div class="swiper-pagination"></div>
                             </div>
@@ -822,7 +450,7 @@
                             </div>
                             <!--智库列表-->
                             <div class="knowledge-list">
-                                <div class="col-md-6 col-xs-6 col-sm-6">
+                                <!--<div class="col-md-6 col-xs-6 col-sm-6">
                                     <div class="radius item">
                                         <a href="#javascript:;">
                                             <img src="img/mobile/section/knowledge/content/1.jpg" alt="">
@@ -834,46 +462,7 @@
                                         <p class="cut-line">——</p>
                                         <div class="time">2021-12-18</div>
                                     </div>
-                                </div>
-                                <div class="col-md-6 col-xs-6 col-sm-6">
-                                    <div class="radius item">
-                                        <a href="#javascript:;">
-                                            <img src="img/mobile/section/knowledge/content/1.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="item-info">
-                                        <p class="title">居家零售</p>
-                                        <div class="text">2021年中国家居产业升级研究报告</div>
-                                        <p class="cut-line">——</p>
-                                        <div class="time">2021-12-18</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-xs-6 col-sm-6">
-                                    <div class="radius item">
-                                        <a href="#javascript:;">
-                                            <img src="img/mobile/section/knowledge/content/1.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="item-info">
-                                        <p class="title">居家零售</p>
-                                        <div class="text">2021年中国家居产业升级研究报告</div>
-                                        <p class="cut-line">——</p>
-                                        <div class="time">2021-12-18</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-xs-6 col-sm-6">
-                                    <div class="radius item">
-                                        <a href="#javascript:;">
-                                            <img src="img/mobile/section/knowledge/content/1.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="item-info">
-                                        <p class="title">居家零售</p>
-                                        <div class="text">2021年中国家居产业升级研究报告</div>
-                                        <p class="cut-line">——</p>
-                                        <div class="time">2021-12-18</div>
-                                    </div>
-                                </div>
+                                </div>-->
                             </div>
                         </div>
                     </div>
@@ -929,35 +518,5 @@
         </div>
     </div>
 
-    <script type="text/javascript">
-
-
-        new Swiper('.swiper_1', {
-            autoplay: 3000,//可选选项，自动滑动
-            pagination: '.swiper-pagination',
-            paginationClickable: true,
-            speed: 300,
-            autoplayDisableOnInteraction: false,
-            loop: true
-        })
-
-        new Swiper('.swiper_2', {
-            autoplay: 3000,//可选选项，自动滑动
-            slidesPerView: 2,
-            spaceBetween: 10,
-            speed: 300,
-            autoplayDisableOnInteraction: false,
-            loop: true
-        })
-
-        const footSlide = new Swiper('.swiper_3', {
-            autoplay: 3000,//可选选项，自动滑动
-            pagination: '.swiper-pagination',
-            paginationClickable: true,
-            speed: 300,
-            autoplayDisableOnInteraction: false,
-            loop: true
-        })
-    </script>
 </body>
 </html>

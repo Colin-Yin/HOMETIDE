@@ -1,0 +1,32 @@
+section .content-wrapper .body .subject-list {
+  height: 190px;
+  margin-top: 20px;
+}
+section .content-wrapper .body .subject-list .item {
+  display: inline-block;
+  text-align: center;
+}
+section .content-wrapper .body .subject-list .subject-title {
+  margin: 0 auto;
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+section .content-wrapper .body .subject-list .subject-title img {
+  width: 104px;
+  height: 24px;
+}
+section .content-wrapper .body .subject-list .subject-content-img {
+  height: 160px;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+section .content-wrapper .body .subject-list .subject-content-img img {
+  height: 160px;
+  width: 100%;
+  vertical-align: top;
+}
+/*# sourceMappingURL=subject-mobile.css.map */

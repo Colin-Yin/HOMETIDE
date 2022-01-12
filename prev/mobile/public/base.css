@@ -52,3 +52,11 @@ p{
     padding-right: 0px;
     padding-left: 0px;
 }
+
+.clamp{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
