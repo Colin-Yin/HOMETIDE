@@ -1,0 +1,88 @@
+//设置头部框体容器
+header {
+    position: relative;
+    
+    .navbar-fixed-top {
+        position: fixed;
+    }
+    .head-title{
+        line-height: 0px;
+        color: #060101;
+        position: absolute;
+        left: 130px;
+        top: 25px;
+        font-family: 'MicrosoftYaHei-Bold', '微软雅黑 Bold', '微软雅黑', '苹方', sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+    }
+    .navbar-default {
+        position: fixed;
+        background: rgba(255, 255, 255, 0.9);
+        margin-bottom: 0;
+        border: 0;
+        padding: 10px 0 0;
+        -webkit-box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+        box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+        border-radius: 0;
+        
+        .navbar-header {
+            margin-right: 0px;
+            margin-left: 0px;
+            
+            .navbar-brand {
+                height: 50px;
+                padding: 0px;
+                
+                img {
+                    position: relative;
+                    left: 7px;
+                    //margin-top: 3px;
+                }
+            }
+            
+            .searchInfo {
+                display: block;
+                position: absolute;
+                text-align: center;
+                width: 36px;
+                height: 36px;
+                line-height: 36px;
+                border-radius: 50%;
+                background-color: #EBAD3A;
+                top: 7px;
+                right: 70px;
+                
+                span.glyphicon-search {
+                    color: #fff;
+                }
+            }
+            
+            button {
+                margin-right: 15px;
+            }
+        }
+        
+        //头部导航
+        #head-nav {
+            //position: relative;
+            li {
+                width: 100%;
+                margin: 0 auto;
+                border-bottom: 1px solid rgba(112, 112, 112, 0.2);
+                height: 40px;
+                
+                a {
+                    font-family: 'MicrosoftYaHei-Bold', '微软雅黑 Bold', '微软雅黑', '苹方', sans-serif;
+                    font-weight: 700;
+                    font-style: normal;
+                    font-size: 16px;
+                    display: inline-block;
+                    width: 100%;
+                    text-align: left;
+                    padding-left: 80px;
+                }
+            }
+        }
+    }
+    
+}

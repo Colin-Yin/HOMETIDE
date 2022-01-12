@@ -1,0 +1,179 @@
+section {
+  position: relative;
+  margin-top: 70px;
+  /*//设置智库容器
+    .knowledge-wrapper {
+        .content-wrapper {
+            background-color: rgb(245, 245, 245);
+            
+            .knowledge-title {
+                border: none;
+                
+                div.title-back {
+                    width: 171px !important;
+                }
+            }
+            
+            .knowledge-list{
+                & > div{
+                    margin-right: 2%;
+                    margin-bottom: 20px;
+                    width: 48%;
+                    padding: 0;
+                }
+                .item{
+                    overflow: hidden;
+                    height: 210px;
+                    width: 100%;
+                    background-color: transparent;
+                    position: relative;
+                    border: none;
+                    box-sizing: border-box;
+                    a{
+                        display: block;
+                        img{
+                            //position: absolute;
+                            //z-index: -1;
+                            width: 100%;
+                            height: 210px;
+                        }
+                    }
+                    
+                }
+                .item-info{
+                    position: absolute;
+                    align-self: center;
+                    padding: 32px 20px 20px 20px;
+                    box-sizing: border-box;
+                    width: 90%;
+                    left: 5%;
+                    top: 18%;
+                    color: #333333;
+                    text-align: left;
+                    line-height: 22px;
+                    background-color: rgba(245, 245, 245,0.7);
+                    p{
+                        margin: 0 0 10px;
+                    }
+                    .text{
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 2;
+                        font-family: MicrosoftYaHei-Bold, "微软雅黑 Bold", '微软雅黑', '苹方', sans-serif;
+                        font-weight: 700;
+                    }
+                    .cut-line{
+                        font-size: 20px;
+                    }
+                    .time{
+                        font-family: MicrosoftYaHei-Bold, "微软雅黑 Bold", '微软雅黑', '苹方', sans-serif;
+                        font-weight: 250;
+                    }
+                }
+            }
+        }
+    }*/
+}
+section .main_title {
+  margin-bottom: 20px;
+  padding: 0px 5%;
+}
+section .top_1 .swiper-slide img {
+  width: 100%;
+}
+section .top_1 .swiper-slide .text {
+  position: absolute;
+  height: 40px;
+  width: 100%;
+  background-color: rgba(51, 51, 51, 0.9);
+  bottom: 0px;
+  left: 0px;
+  padding: 0px 0px 0px 20px;
+  margin: 0px;
+  z-index: 1000;
+}
+section .top_1 .swiper-slide .text p {
+  font-family: 'MicrosoftYaHei-Bold', '微软雅黑 Bold', '微软雅黑', '苹方', sans-serif;
+  font-weight: 700;
+  font-size: 0.6em;
+  color: #FFFFFF;
+  text-align: left;
+  line-height: 40px;
+  height: 40px;
+  width: 90%;
+  padding: 0px;
+  margin: 0px;
+}
+section .top_1 .swiper-pagination {
+  position: relative;
+  bottom: 0;
+}
+section .top_2 {
+  /*.swiper-slide {
+            img {
+                width: 100%;
+            }*/
+}
+section .top_2 .swiper-slide a {
+  display: flex;
+  justify-content: space-around;
+}
+section .top_2 .swiper-slide a > img {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+}
+section .foot-slide .swiper-slide img {
+  width: 100%;
+  height: 130px;
+}
+section .foot-slide .swiper-pagination {
+  position: relative;
+  bottom: 0;
+}
+section .promotional-video video {
+  width: 100%;
+}
+.back-top {
+  position: fixed;
+  right: 0px;
+  bottom: 86px;
+  background-color: #FFF;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 20px;
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  z-index: 5;
+}
+.back-top > div {
+  background-color: #f2f5f6;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.12);
+  text-align: center;
+  width: 55px;
+  height: 55px;
+}
+.back-top > div i {
+  height: 20px;
+  width: 20px;
+  font-size: 16px;
+  margin: 10px 0px 5px 0px;
+  background-color: #CCCCCC;
+  color: white;
+  border-radius: 50%;
+}
+.back-top > div p {
+  font-size: 12px;
+  color: #CCCCCC;
+}
+/*# sourceMappingURL=index-mobile.css.map */

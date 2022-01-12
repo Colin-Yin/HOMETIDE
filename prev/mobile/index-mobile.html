@@ -4,17 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, intial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable:no">
-    <title>Title</title>
-    <link rel="stylesheet" href="./iconfont/all.css">
-    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <title>家页</title>
     <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.0/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="./iconfont/all.css">
+    <link rel="stylesheet" href="./public/base.css">
+    <link rel="stylesheet" href="./public/head-nav.css">
+    <link rel="stylesheet" href="./public/foot.css">
+    <link rel="stylesheet" href="css/index/index-mobile.css">
+    <link rel="stylesheet" href="css/index/wrapper-model-mobile.css">
+    <link rel="stylesheet" href="css/index/fast-alerts-mobile.css">
+    <link rel="stylesheet" href="css/index/industry-alerts-mobile.css">
+    <link rel="stylesheet" href="css/index/knowledge-mobile.css">
+    <link rel="stylesheet" href="css/index/subject-mobile.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
     <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.0/js/bootstrap.js"></script>
     <link href="https://cdn.bootcdn.net/ajax/libs/Swiper/3.4.0/css/swiper.css" rel="stylesheet">
     <script src="https://cdn.bootcdn.net/ajax/libs/Swiper/3.4.0/js/swiper.js"></script>
-    <link rel="stylesheet" href="css/index-mobile-header.css">
+    <script type="text/javascript" src="./plugins/zepto/zepto.js"></script>
+    <script type="text/javascript" src="./plugins/zepto/touch.js"></script>
+    <script type="text/javascript" src="./js/industry-dropdown.js"></script>
 </head>
 <body>
     <div id="mobile">
+
         <header class="clearfix">
             <div class="navbar navbar-fixed-top navbar-default">
                 <div class="container">
@@ -35,31 +47,35 @@
                     <div id="head-nav" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-right">
                             <li>
-                                <a href="#javascript:;">首页</a>
+                                <a href="index-mobile.html">首页</a>
                             </li>
                             <li>
-                                <a href="#javascript:;">首页</a>
+                                <a href="information-mobile.html">资讯</a>
                             </li>
                             <li>
-                                <a href="#javascript:;">首页</a>
+                                <a href="knowledge-mobile.html">智库</a>
                             </li>
                             <li>
-                                <a href="#javascript:;">首页</a>
+                                <a href="#javascript:;">活动</a>
                             </li>
                             <li>
-                                <a href="#javascript:;">首页</a>
+                                <a href="#javascript:;">行业培训</a>
                             </li>
                             <li>
-                                <a href="#javascript:;">首页</a>
+                                <a href="#javascript:;">品牌服务</a>
                             </li>
                             <li>
-                                <a href="#javascript:;">首页</a>
+                                <a href="#javascript:;">视频工厂</a>
+                            </li>
+                            <li>
+                                <a href="#javascript:;">俱乐部</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </header>
+
         <section class="clearfix">
 
             <!--头部第一个广告轮播-->
@@ -67,43 +83,41 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 col-xs-12 col-sm-12">
-                            <div class="carousel slide" id="slide" data-ride="carousel" data-interval="3000"
-                                 data-wrap="true">
-
-                                <div class="carousel-inner radius">
-                                    <div class="item active">
-                                        <a href="#javascript:;">
-                                            <img src="img/mobile/section/slider_top_1/1.jpg" alt=""/>
-                                            <div class="carousel-caption">
-                                                <!--<h3>图片说明</h3>-->
-                                                <!--<p>这是slide1</p>-->
-                                            </div>
-                                        </a>
+                            <div class="swiper-container swiper_1 radius">
+                                <div class="swiper-wrapper">
+                                    <div role="group" aria-label="1/5" class="swiper-slide radius">
+                                        <img src="img/mobile/section/slider_top_1/1.jpg" alt=""/>
+                                        <div class="text">
+                                            <p> 2021年中国装配式内装修行业发展趋势报告 </p>
+                                        </div>
                                     </div>
-                                    <div class="item">
-                                        <a href="#javascript:;">
-                                            <img src="img/mobile/section/slider_top_1/2.gif" alt=""/>
-                                            <div class="carousel-caption">
-                                                <!--<h3>图片说明</h3>-->
-                                                <!--<p>这是slide2</p>-->
-                                            </div>
-                                        </a>
+                                    <div role="group" aria-label="2/5" class="swiper-slide radius">
+                                        <img src="img/mobile/section/slider_top_1/2.gif" alt=""/>
+                                        <div class="text">
+                                            <p> 2021年中国装配式内装修行业发展趋势报告 </p>
+                                        </div>
                                     </div>
-                                    <div class="item">
-                                        <a href="#javascript:;">
-                                            <img src="img/mobile/section/slider_top_1/3.jpg" alt=""/>
-                                            <div class="carousel-caption">
-                                                <!--<h3>图片说明</h3>-->
-                                                <!--<p>这是slide3</p>-->
-                                            </div>
-                                        </a>
+                                    <div role="group" aria-label="3/5" class="swiper-slide radius">
+                                        <img src="img/mobile/section/slider_top_1/3.jpg" alt=""/>
+                                        <div class="text">
+                                            <p> 2021年中国装配式内装修行业发展趋势报告 </p>
+                                        </div>
+                                    </div>
+                                    <div role="group" aria-label="4/5" class="swiper-slide radius">
+                                        <img src="img/mobile/section/slider_top_1/4.gif" alt=""/>
+                                        <div class="text">
+                                            <p> 2021年中国装配式内装修行业发展趋势报告 </p>
+                                        </div>
+                                    </div>
+                                    <div role="group" aria-label="5/5" class="swiper-slide radius">
+                                        <img src="img/mobile/section/slider_top_1/5.gif" alt=""/>
+                                        <div class="text">
+                                            <p> 2021年中国装配式内装修行业发展趋势报告 </p>
+                                        </div>
                                     </div>
                                 </div>
-                                <ol class="carousel-indicators"><!--carousel-indicators 申明轮播框-->
-                                    <li data-target="#slide" data-slide-to="0" class="active"></li>
-                                    <li data-target="#slide" data-slide-to="1"></li>
-                                    <li data-target="#slide" data-slide-to="2"></li>
-                                </ol><!--点击轮播data-target="#slide" data-slide-to="具体轮播到第几张"-->
+                                <div class="swiper-pagination">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -112,48 +126,43 @@
 
             <!--头部第二个广告轮播-->
             <div class="banner main_title top_2">
-                <div class="container">
+                <div class="container radius">
                     <div class="row">
                         <div class="col-md-12 col-xs-12 col-sm-12">
-                            <div class="carousel slide" id="slide2" data-ride="carousel" data-interval="3000"
-                                 data-wrap="true">
-                                <div class="carousel-inner radius">
-                                    <div class="item active">
+                            <div class="swiper-container swiper_2">
+                                <div class="swiper-wrapper radius">
+                                    <div role="group" aria-label="1/3" class="swiper-slide">
                                         <a href="#javascript:;">
                                             <img class="radius" src="img/mobile/section/slider_top_1/1.jpg" alt=""/>
+                                        </a>
+                                    </div>
+                                    <div role="group" aria-label="2/3" class="swiper-slide">
+                                        <a href="#javascript:;">
                                             <img class="radius" src="img/mobile/section/slider_top_1/1.jpg" alt=""/>
-                                            <div class="carousel-caption">
-                                                <!--<h3>图片说明</h3>-->
-                                                <!--<p>这是slide1</p>-->
-                                            </div>
                                         </a>
                                     </div>
-                                    <div class="item">
+                                    <div role="group" aria-label="3/3" class="swiper-slide">
                                         <a href="#javascript:;">
-                                            <img class="radius" src="img/mobile/section/slider_top_1/2.gif" alt=""/>
-                                            <img class="radius" src="img/mobile/section/slider_top_1/2.gif" alt=""/>
-                                            <div class="carousel-caption">
-                                                <!--<h3>图片说明</h3>-->
-                                                <!--<p>这是slide2</p>-->
-                                            </div>
+                                            <img class="radius" src="img/mobile/section/slider_top_1/1.jpg" alt=""/>
                                         </a>
                                     </div>
-                                    <div class="item">
+                                    <div role="group" aria-label="3/3" class="swiper-slide">
                                         <a href="#javascript:;">
-                                            <img class="radius" src="img/mobile/section/slider_top_1/3.jpg" alt=""/>
-                                            <img class="radius" src="img/mobile/section/slider_top_1/3.jpg" alt=""/>
-                                            <div class="carousel-caption">
-                                                <!--<h3>图片说明</h3>-->
-                                                <!--<p>这是slide3</p>-->
-                                            </div>
+                                            <img class="radius" src="img/mobile/section/slider_top_1/1.jpg" alt=""/>
+                                        </a>
+                                    </div>
+                                    <div role="group" aria-label="3/3" class="swiper-slide">
+                                        <a href="#javascript:;">
+                                            <img class="radius" src="img/mobile/section/slider_top_1/1.jpg" alt=""/>
+                                        </a>
+                                    </div>
+                                    <div role="group" aria-label="3/3" class="swiper-slide">
+                                        <a href="#javascript:;">
+                                            <img class="radius" src="img/mobile/section/slider_top_1/1.jpg" alt=""/>
                                         </a>
                                     </div>
                                 </div>
-                                <!--<ol class="carousel-indicators">&lt;!&ndash;carousel-indicators 申明轮播框&ndash;&gt;-->
-                                <!--    <li data-target="#slide2" data-slide-to="0" class="active"></li>-->
-                                <!--    <li data-target="#slide2" data-slide-to="1"></li>-->
-                                <!--    <li data-target="#slide2" data-slide-to="2"></li>-->
-                                <!--</ol>-->
+                                <!--<div class="swiper-pagination"></div>-->
                             </div>
                         </div>
                     </div>
@@ -475,7 +484,7 @@
                                 <div class="body">
                                     <div class="title industry-alerts">
                                         <div class="more">
-                                            <a href="#javascript:;">更多&gt;</a>
+                                            <a href="./information-mobile.html">更多&gt;</a>
                                         </div>
                                         <div class="title-back">
                                             <a href="#javascript:;">
@@ -489,29 +498,86 @@
                                         <!--行业分类industry-->
                                         <div class="industry select">
                                             <span>行业</span>
+                                            <div class="dropdown clearfix" style="display: none">
+                                                <div class="dropdown-menus">
+                                                    <ul class="dropdown-list">
+                                                        <li class="active">行业</li>
+                                                        <li>全屋定制</li>
+                                                        <li>全屋定制</li>
+                                                        <li>全屋定制</li>
+                                                        <li>全屋定制</li>
+                                                        <li>全屋定制</li>
+                                                        <li>全屋定制</li>
+                                                        <li>全屋定制</li>
+                                                        <li>全屋定制</li>
+                                                        <li>全屋定制</li>
+                                                        <li>全屋定制</li>
+                                                        <li>全屋定制</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="arrow"></div>
+                                            </div>
                                         </div>
                                         <!--趋势分类trend-->
                                         <div class="trend select">
                                             <span>趋势</span>
+                                            <div class="dropdown clearfix" style="display: none">
+                                                <div class="dropdown-menus">
+                                                    <ul class="dropdown-list">
+                                                        <li class="active">行业</li>
+                                                        <li>全屋定制</li>
+                                                        <li>全屋定制</li>
+                                                        <li>全屋定制</li>
+                                                        <li>全屋定制</li>
+                                                        <li>全屋定制</li>
+                                                        <li>全屋定制</li>
+                                                        <li>全屋定制</li>
+                                                        <li>全屋定制</li>
+                                                        <li>全屋定制</li>
+                                                        <li>全屋定制</li>
+                                                        <li>全屋定制</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="arrow"></div>
+                                            </div>
                                         </div>
                                         <!--热词分类hot-words-->
                                         <div class="hot-words select">
                                             <span>热词</span>
+                                            <div class="dropdown clearfix" style="display: none">
+                                                <div class="dropdown-menus">
+                                                    <ul class="dropdown-list">
+                                                        <li class="active">行业</li>
+                                                        <li>全屋定制</li>
+                                                        <li>全屋定制</li>
+                                                        <li>全屋定制</li>
+                                                        <li>全屋定制</li>
+                                                        <li>全屋定制</li>
+                                                        <li>全屋定制</li>
+                                                        <li>全屋定制</li>
+                                                        <li>全屋定制</li>
+                                                        <li>全屋定制</li>
+                                                        <li>全屋定制</li>
+                                                        <li>全屋定制</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="arrow"></div>
+                                            </div>
                                         </div>
                                     </div>
                                     <!--业界资讯容器-->
                                     <ul class="media-list industry-alerts-wrapper">
                                         <li class="media">
-                                            <div class="media-left media-img radius">
-                                                <a href="#javascript:;">
+                                            <a href="information-article-mobile.html">
+                                                <div class="media-left media-img radius">
                                                     <img class="media-object"
                                                          src="./img/mobile/section/industry-alerts/1.gif" alt="">
-                                                </a>
-                                            </div>
-                                            <div class="media-body media-text">
-                                                <h4 class="media-heading">家页观察 | 世界500强巨头跨界，防水行业进入战国时代</h4>
-                                                <div class="media-time">2022-01-11 16:54:00</div>
-                                            </div>
+                                                </div>
+                                                <div class="media-body media-text">
+                                                    <h4 class="media-heading">家页观察 | 世界500强巨头跨界，防水行业进入战国时代</h4>
+                                                    <div class="media-time">2022-01-11 16:54:00</div>
+                                                </div>
+                                            </a>
                                         </li>
                                         <li class="media">
                                             <div class="media-left media-img radius">
@@ -610,7 +676,7 @@
                                 <div class="body">
                                     <div class="title">
                                         <div class="more">
-                                            <a href="#javascript:;">更多&gt;</a>
+                                            <a href="./subject-mobile.html">更多&gt;</a>
                                         </div>
                                         <div class="title-back">
                                             <a href="#javascript:;">
@@ -714,11 +780,11 @@
 
             <!--底部轮播框-->
             <div class="foot-slide main_title">
-                <div class="container">
+                <div class="container radius">
                     <div class="row">
                         <div class="col-md-12 col-xs-12 col-sm-12">
-                            <div class="swiper-container">
-                                <div class="swiper-wrapper">
+                            <div class="swiper-container swiper_3">
+                                <div class="swiper-wrapper radius">
                                     <div role="group" aria-label="1/3" class="swiper-slide">
                                         <img class="radius" src="img/mobile/section/slider_top_1/1.jpg" alt=""/>
                                     </div>
@@ -729,8 +795,7 @@
                                         <img class="radius" src="img/mobile/section/slider_top_1/1.jpg" alt=""/>
                                     </div>
                                 </div>
-                                <div class="swiper-pagination">
-                                </div>
+                                <div class="swiper-pagination"></div>
                             </div>
                         </div>
                     </div>
@@ -745,7 +810,7 @@
                                 <div class="body">
                                     <div class="title knowledge-title">
                                         <div class="more">
-                                            <a href="#javascript:;">更多&gt;</a>
+                                            <a href="knowledge-mobile.html">更多&gt;</a>
                                         </div>
                                         <div class="title-back">
                                             <a href="#javascript:;">
@@ -830,6 +895,7 @@
                 </div>
             </div>
         </section>
+
         <footer class="clearfix">
             <div class="container">
                 <div class="row">
@@ -853,6 +919,8 @@
                 </div>
             </div>
         </footer>
+
+        <!--设置回到顶部按钮-->
         <div class="back-top">
             <div>
                 <i class="fas fa-chevron-up"></i>
@@ -860,10 +928,32 @@
             </div>
         </div>
     </div>
+
     <script type="text/javascript">
-        const footSlide = new Swiper('.swiper-container', {
+
+
+        new Swiper('.swiper_1', {
             autoplay: 3000,//可选选项，自动滑动
             pagination: '.swiper-pagination',
+            paginationClickable: true,
+            speed: 300,
+            autoplayDisableOnInteraction: false,
+            loop: true
+        })
+
+        new Swiper('.swiper_2', {
+            autoplay: 3000,//可选选项，自动滑动
+            slidesPerView: 2,
+            spaceBetween: 10,
+            speed: 300,
+            autoplayDisableOnInteraction: false,
+            loop: true
+        })
+
+        const footSlide = new Swiper('.swiper_3', {
+            autoplay: 3000,//可选选项，自动滑动
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
             speed: 300,
             autoplayDisableOnInteraction: false,
             loop: true

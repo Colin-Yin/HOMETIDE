@@ -1,0 +1,16 @@
+footer {
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+  height: 140px;
+  color: #999999;
+  background-color: #333333;
+}
+footer .center {
+  text-align: center;
+  margin-top: 40px;
+}
+footer .center a {
+  color: #999999;
+}
+/*# sourceMappingURL=foot.css.map */
