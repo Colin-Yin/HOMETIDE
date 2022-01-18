@@ -1,0 +1,88 @@
+header {
+  position: relative;
+}
+header .navbar-fixed-top {
+  position: fixed;
+}
+header .head-title {
+  line-height: 0px;
+  color: #060101;
+  position: absolute;
+  left: 130px;
+  top: 25px;
+  font-family: 'MicrosoftYaHei-Bold', '微软雅黑 Bold', '微软雅黑', '苹方', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+header .navbar-default {
+  position: fixed;
+  background: rgba(255, 255, 255, 0.9);
+  margin-bottom: 0;
+  border: 0;
+  padding: 10px 0 0;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+}
+header .navbar-default .navbar-header {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+header .navbar-default .navbar-header .navbar-brand {
+  height: 50px;
+  padding: 0px;
+}
+header .navbar-default .navbar-header .navbar-brand img {
+  position: relative;
+  left: 7px;
+}
+header .navbar-default .navbar-header .searchInfo {
+  display: block;
+  position: absolute;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 50%;
+  background-color: #EBAD3A;
+  top: 7px;
+  right: 70px;
+}
+header .navbar-default .navbar-header .searchInfo span.glyphicon-search {
+  color: #fff;
+}
+header .navbar-default .navbar-header button {
+  margin-right: 15px;
+}
+header .navbar-default #head-nav li {
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(112, 112, 112, 0.2);
+  height: 40px;
+}
+header .navbar-default #head-nav li a {
+  font-family: 'MicrosoftYaHei-Bold', '微软雅黑 Bold', '微软雅黑', '苹方', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  padding-left: 80px;
+}
+footer {
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+  height: 140px;
+  color: #999999;
+  background-color: #333333;
+}
+footer .center {
+  text-align: center;
+  margin-top: 40px;
+}
+footer .center a {
+  color: #999999;
+}
+/*# sourceMappingURL=headAndFoot.css.map */

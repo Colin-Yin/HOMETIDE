@@ -1,0 +1,20 @@
+section .article-info .info-body .info-head .info-title span {
+  color: black;
+}
+section .article-info .info-body .article-inner {
+  margin-bottom: 20px;
+  font-family: 'MicrosoftYaHei', '微软雅黑', '苹方', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 28px;
+  font-size: 14px;
+  letter-spacing: normal;
+  color: #666666;
+  padding: 12px 15px;
+  tab-size: 4;
+  -moz-tab-size: 4;
+  text-align: left;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+/*# sourceMappingURL=fast-alerts-details.css.map */

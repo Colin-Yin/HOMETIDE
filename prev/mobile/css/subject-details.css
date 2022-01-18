@@ -1,0 +1,50 @@
+section .back {
+  height: 220px !important;
+}
+section .subject-info {
+  overflow: hidden;
+}
+section .subject-info .media-left,
+section .subject-info .media-body {
+  display: block;
+  padding: 0;
+}
+section .subject-info .media-left img {
+  width: 100%;
+}
+section .subject-info .media-body {
+  width: unset;
+}
+section .subject-info .media-body .title {
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 15px;
+}
+section .subject-info .media-body .title img {
+  height: 24px;
+}
+section .subject-info .media-body .title > span {
+  position: absolute;
+  right: 15px;
+}
+section .subject-info .media-body .title > span .count {
+  font-family: 'Impact', sans-serif;
+  font-weight: 900;
+  font-size: 22px;
+  color: #FFA94C;
+}
+section .subject-info .media-body .text {
+  margin-bottom: 15px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #666666;
+  margin-left: 15px;
+}
+section .content > .content-wrapper {
+  background-color: transparent;
+}
+section .content > .content-wrapper .body {
+  padding: 0;
+}
+/*# sourceMappingURL=subject-details.css.map */

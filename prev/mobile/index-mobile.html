@@ -2,51 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, intial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable:no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable:no">
     <title>家页</title>
     <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.0/css/bootstrap.css" rel="stylesheet">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.0/js/bootstrap.js"></script>
+    <link href="https://cdn.bootcdn.net/ajax/libs/Swiper/3.4.0/css/swiper.css" rel="stylesheet">
+    <script src="https://cdn.bootcdn.net/ajax/libs/Swiper/3.4.0/js/swiper.js"></script>
+    <script src="https://cdn.bootcss.com/Mock.js/1.0.0/mock-min.js"></script>
+    <script type="text/javascript" src="./plugins/Mock/index.js"></script>
+    <script type="text/javascript" src="./plugins/zepto/zepto.js"></script>
+    <script type="text/javascript" src="./plugins/zepto/touch.js"></script>
     <!--icon图标库-->
     <link rel="stylesheet" href="./iconfont/all.css">
     <!--公共默认样式-->
     <link rel="stylesheet" href="./public/base.css">
-    <!--公用头部-->
-    <link rel="stylesheet" href="./public/head-nav.css">
-    <!--公用底部-->
-    <link rel="stylesheet" href="./public/foot.css">
+    <!--公用页头页脚-->
+    <link rel="stylesheet" href="./public/headAndFoot.css">
     <!--主页css-->
-    <link rel="stylesheet" href="css/main-page-mobile/index-mobile.css">
-    <!--快讯,业界资讯,专题,资讯外部容器css-->
-    <link rel="stylesheet" href="css/main-page-mobile/wrapper-model-mobile.css">
-    <!--快讯css-->
-    <link rel="stylesheet" href="css/main-page-mobile/fast-alerts-mobile.css">
-    <!--业界资讯css-->
-    <link rel="stylesheet" href="css/main-page-mobile/industry-alerts-mobile.css">
-    <!--智库css-->
-    <link rel="stylesheet" href="css/main-page-mobile/knowledge-mobile.css">
-    <!--专题css-->
-    <link rel="stylesheet" href="css/main-page-mobile/subject-mobile.css">
-    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
-    <script src="https://cdn.bootcss.com/Mock.js/1.0.0/mock-min.js"></script>
-    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.0/js/bootstrap.js"></script>
-    <link href="https://cdn.bootcdn.net/ajax/libs/Swiper/3.4.0/css/swiper.css" rel="stylesheet">
-    <script src="https://cdn.bootcdn.net/ajax/libs/Swiper/3.4.0/js/swiper.js"></script>
-    <script type="text/javascript" src="./plugins/Mock/index.js"></script>
+    <link rel="stylesheet" href="css/index-mobile.css">
     <!--顶部大轮播框ajax-->
-    <script type="text/javascript" src="./js/main-page-mobile/top-big-banner.js"></script>
+    <script type="text/javascript" src="js/top-big-banner.js"></script>
     <!--顶部小轮播图ajax-->
-    <script type="text/javascript" src="./js/main-page-mobile/top-small-banner.js"></script>
+    <script type="text/javascript" src="js/top-small-banner.js"></script>
     <!--底部轮播图ajax-->
-    <script type="text/javascript" src="./js/main-page-mobile/bottom-banner.js"></script>
+    <script type="text/javascript" src="js/bottom-banner.js"></script>
     <!--快讯ajax-->
-    <script type="text/javascript" src="./js/alerts/fast-alerts.js"></script>
+    <script type="text/javascript" src="js/fast-alerts.js"></script>
     <!--业界资讯ajax-->
-    <script type="text/javascript" src="./js/alerts/industry-alerts.js"></script>
+    <script type="text/javascript" src="js/industry-alerts.js"></script>
     <!--专题ajax-->
-    <script type="text/javascript" src="./js/alerts/subject-alerts.js"></script>
+    <script type="text/javascript" src="js/subject-alerts.js"></script>
     <!--智库ajax-->
-    <script type="text/javascript" src="./js/alerts/knowledge.js"></script>
-    <script type="text/javascript" src="./plugins/zepto/zepto.js"></script>
-    <script type="text/javascript" src="./plugins/zepto/touch.js"></script>
+    <script type="text/javascript" src="js/knowledge.js"></script>
+
     <script type="text/javascript" src="./js/industry-dropdown.js"></script>
 </head>
 <body>
@@ -59,7 +49,7 @@
                         <a href="#javascript:;" class="navbar-brand">
                             <img src="img/mobile/head/logo/logo.svg" alt="" height="44px" width="98px">
                         </a>
-                        <a href="#javascript:;" class="searchInfo">
+                        <a href="search-mobile.html" class="searchInfo">
                             <span class="glyphicon glyphicon-search"></span>
                         </a>
                         <button class="navbar-toggle collapsed" type="button" data-toggle="collapse"
@@ -104,7 +94,7 @@
         <section class="clearfix">
 
             <!--头部第一个广告轮播-->
-            <div class="banner main_title top_1">
+            <div class="banner main_title top-big-slide">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 col-xs-12 col-sm-12">
@@ -150,7 +140,7 @@
             </div>
 
             <!--头部第二个广告轮播-->
-            <div class="banner main_title top_2">
+            <div class="banner main_title top-small-slide">
                 <div class="container radius">
                     <div class="row">
                         <div class="col-md-12 col-xs-12 col-sm-12">
@@ -214,28 +204,7 @@
                                     <div class="alerts-content">
                                         <!--资讯链接列表-->
                                         <div class="alerts-list">
-                                            <!--<div class="item">
-                                                <a href="#javascript:;" class="alerts-link">
-                                                    <div class="link-inner">
-                                                        <div class="fast">
-                                                            <div class="fast-title">
-                                                                <div class="title-img">
-                                                                    <img
-                                                                        src="./img/mobile/section/alerts/alertsLinkLogo/1.png"
-                                                                        alt="">
-                                                                </div>
-                                                                <span class="title-text">建材产业动向</span>
-                                                                <span class="time">6小时前</span>
-                                                            </div>
-                                                            <div class="fast-content radius">
-                                                                <span>
-                                                                    名家汇转让名家汇交通科技51%股份，震有科技接盘
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>-->
+                                        <!--    ajax动态生成-->
                                         </div>
                                     </div>
                                 </div>
@@ -268,7 +237,8 @@
                                         <!--行业分类industry-->
                                         <div class="industry select">
                                             <span>行业</span>
-                                            <div class="dropdown clearfix" style="display: none">
+                                            <div class="dropdown clearfix">
+                                                <div class="arrow"></div>
                                                 <div class="dropdown-menus">
                                                     <ul class="dropdown-list">
                                                         <li class="active">行业</li>
@@ -285,13 +255,12 @@
                                                         <li>全屋定制</li>
                                                     </ul>
                                                 </div>
-                                                <div class="arrow"></div>
                                             </div>
                                         </div>
                                         <!--趋势分类trend-->
                                         <div class="trend select">
                                             <span>趋势</span>
-                                            <div class="dropdown clearfix" style="display: none">
+                                            <div class="dropdown clearfix">
                                                 <div class="dropdown-menus">
                                                     <ul class="dropdown-list">
                                                         <li class="active">行业</li>
@@ -314,7 +283,7 @@
                                         <!--热词分类hot-words-->
                                         <div class="hot-words select">
                                             <span>热词</span>
-                                            <div class="dropdown clearfix" style="display: none">
+                                            <div class="dropdown clearfix">
                                                 <div class="dropdown-menus">
                                                     <ul class="dropdown-list">
                                                         <li class="active">行业</li>
@@ -337,18 +306,18 @@
                                     </div>
                                     <!--业界资讯容器-->
                                     <ul class="media-list industry-alerts-wrapper">
-                                       <!-- <li class="media">
-                                            <a href="information-article-mobile.html">
-                                                <div class="media-left media-img radius">
-                                                    <img class="media-object"
-                                                         src="./img/mobile/section/industry-alerts/1.gif" alt="">
-                                                </div>
-                                                <div class="media-body media-text">
-                                                    <h4 class="media-heading">家页观察 | 世界500强巨头跨界，防水行业进入战国时代</h4>
-                                                    <div class="media-time">2022-01-11 16:54:00</div>
-                                                </div>
-                                            </a>
-                                        </li>-->
+                                        <!-- <li class="media">
+                                             <a href="information-article-mobile.html">
+                                                 <div class="media-left media-img radius">
+                                                     <img class="media-object"
+                                                          src="./img/mobile/section/industry-alerts/1.gif" alt="">
+                                                 </div>
+                                                 <div class="media-body media-text">
+                                                     <h4 class="media-heading">家页观察 | 世界500强巨头跨界，防水行业进入战国时代</h4>
+                                                     <div class="media-time">2022-01-11 16:54:00</div>
+                                                 </div>
+                                             </a>
+                                         </li>-->
                                     </ul>
                                     <!--    业界资讯全部跳转链接按钮-->
                                     <div class="foot-link">
@@ -407,7 +376,7 @@
             </div>
 
             <!--底部轮播框-->
-            <div class="foot-slide main_title">
+            <div class="banner foot-slide main_title">
                 <div class="container radius">
                     <div class="row">
                         <div class="col-md-12 col-xs-12 col-sm-12">
@@ -451,17 +420,18 @@
                             <!--智库列表-->
                             <div class="knowledge-list">
                                 <!--<div class="col-md-6 col-xs-6 col-sm-6">
-                                    <div class="radius item">
-                                        <a href="#javascript:;">
+                                    <a href="#javascript:;">
+                                        <div class="radius item">
                                             <img src="img/mobile/section/knowledge/content/1.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="item-info">
-                                        <p class="title">居家零售</p>
-                                        <div class="text">2021年中国家居产业升级研究报告</div>
-                                        <p class="cut-line">——</p>
-                                        <div class="time">2021-12-18</div>
-                                    </div>
+
+                                        </div>
+                                        <div class="item-info">
+                                            <p class="title">居家零售</p>
+                                            <div class="text">2021年中国家居产业升级研究报告</div>
+                                            <p class="cut-line">——</p>
+                                            <div class="time">2021-12-18</div>
+                                        </div>
+                                    </a>
                                 </div>-->
                             </div>
                         </div>
@@ -517,6 +487,5 @@
             </div>
         </div>
     </div>
-
 </body>
 </html>

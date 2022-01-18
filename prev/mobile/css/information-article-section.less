@@ -1,0 +1,214 @@
+#information-article{
+    p{
+        overflow: unset;
+        text-overflow: unset;
+        //-webkit-line-clamp:0;
+    }
+    section{
+        .page-header{
+            margin-top: 70px;
+            border-bottom: none;
+            .breadcrumb{
+                height: 50px;
+                line-height: 10px;
+                border: 1px solid rgb(233, 233, 233);
+                background-color: rgb(255, 255, 255);
+                padding: 20px;
+                margin-bottom: 0;
+                li{
+                    font-size: 14px;
+                    line-height: 8px;
+                    font-weight: 400;
+                    color: #606266;
+                    cursor: text;
+                    &:before{
+                        font-weight: 700;
+                    }
+                    a{
+                        font-weight: 700;
+                        text-decoration: none;
+                        -webkit-transition: color .2s cubic-bezier(.645,.045,.355,1);
+                        transition: color .2s cubic-bezier(.645,.045,.355,1);
+                        color: #303133;
+                    }
+                }
+            }
+        }
+        
+        .article-info{
+            .info-wrapper{
+                padding: 20px 0px;
+                border: 1px solid #EBEEF5;
+                background-color: #FFF;
+                color: #303133;
+                -webkit-transition: .3s;
+                transition: .3s;
+                overflow: hidden;
+                
+                .info-body{
+                    padding: 0px 15px 20px 15px;
+                    .info-head{
+                        .info-label{
+                            font-size: 14px;
+                            height: 28px;
+                            line-height: 28px;
+                            margin: 5px 0px;
+                            span{
+                                margin-right: 5px;
+                                color: rgb(235, 173, 58);
+                                font-weight: 400;
+                                font-size: 12px;
+                                i{
+                                    margin-right: 5px;
+                                }
+                            }
+                        }
+                        
+                        .info-title{
+                            span{
+                                word-break: break-all;
+                                font-weight: 700;
+                                font-size: 20px;
+                            }
+                        }
+                        
+                        div:last-of-type{
+                            margin-top: 8px;
+                            span{
+                                font-weight: 400;
+                                font-size: 12px;
+                                color: #999999;
+                            }
+                            .time{
+                                margin-right: 18px;
+                            }
+                        }
+                        
+                        .cut-line{
+                            margin: 13px 0;
+                            display: block;
+                            height: 1px;
+                            width: 100%;
+                            background-color: #DCDFE6;
+                            position: relative;
+                        }
+                    }
+                    
+                    .article-inner{
+                        position: relative;
+                        
+                        .abstract{
+                            background: url(../img/mobile/information-article/abstract-logo/1.png) no-repeat 10px 0px #f5f5f5;
+                            border-radius: 12px;
+                            padding: 20px 20px 20px 100px;
+                            text-align: justify;
+                            min-height: 120px;
+                            span{
+                                color: rgb(153, 153, 153);
+                                font-size: 14px;
+                                line-height: 28px;
+                            }
+                        }
+                        
+                        .content{
+                            font-size: 16px;
+                            line-height: 32px;
+                            padding: 0px;
+                            overflow: hidden;
+                            margin-top: 20px;
+                           /* -webkit-box-sizing: border-box;
+                            box-sizing: border-box;
+                            height: 100%;
+                            outline: none;
+                            overflow-y: auto;
+                            tab-size: 4;
+                            -moz-tab-size: 4;
+                            text-align: left;
+                            white-space: pre-wrap;
+                            word-wrap: break-word;*/
+                            p{
+                                width: 100%;
+                            }
+                            .align-center{
+                                text-align: center;
+                                font-size: 24px;
+                                img{
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        .article-like{
+            .like-wrapper{
+                border: 1px solid #EBEEF5;
+                background-color: #FFF;
+                color: #303133;
+                -webkit-transition: .3s;
+                transition: .3s;
+                overflow: hidden;
+                .like-body{
+                    padding: 0px 15px 20px 15px;
+                    
+                    .author-text{
+                        font-size: 14px;
+                        margin-top: 20px;
+                        span{
+                            font-weight: 400;
+                            font-size: 12px;
+                            color: #999999;
+                        }
+                        .author{
+                            padding-right: 20px;
+                        }
+                    }
+                    
+                    .like-label{
+                        div{
+                            font-size: 14px;
+                            margin: 5px 0px;
+                            height: 28px;
+                            line-height: 28px;
+                            span{
+                                margin-right: 5px;
+                                color: rgb(235, 173, 58);
+                                font-weight: 400;
+                                font-size: 12px;
+                                i{
+                                    margin-right: 5px;
+                                }
+                            }
+                        }
+                    }
+                    
+                    .article-good{
+                        text-align: center;
+                        button{
+                            width: 148px;
+                            height: 50px;
+                            margin: 15px 0px;
+                            font-size: 23px;
+                            line-height: 50px;
+                            padding: 0px !important;
+                            text-align: center;
+                            border-radius: 20px;
+                            color: #FFF;
+                            background-color: #E6A23C;
+                            border-color: #E6A23C;
+                            border-style: none;
+                            span{
+                                font-weight: 400;
+                                font-size: 14px;
+                                color: white;
+                                line-height: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

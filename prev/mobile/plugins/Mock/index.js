@@ -45,7 +45,9 @@ Mock.mock('/alerts/info','get',{
     ],
     "subject|10-20":[
         {
-            img:"@image('200x100')"
+            img:"@image('200x100')",
+            info:"@csentence(2,5)",
+            time:'@datetime'
         }
     ],
     "knowledge|10-20":[
@@ -56,4 +58,12 @@ Mock.mock('/alerts/info','get',{
             time:'@date'
         }
     ],
+    "activity|10-20":[
+        {
+            img:"@image('200x100')",
+            title:"@csentence(2,5)",
+            info: "@csentence(10,25)",
+            time:'@date'
+        }
+    ]
 })

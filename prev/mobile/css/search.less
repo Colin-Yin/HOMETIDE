@@ -1,0 +1,214 @@
+section {
+    margin-top: 60px;
+    
+    .page-header {
+        margin-top: 0px;
+        background: url("../img/mobile/search/background/searchbg.jpeg") -40px rgb(153, 153, 153);
+        background-size: cover;
+        height: 230px;
+        padding-top: 90px;
+        
+        .search-wrapper {
+            width: 90%;
+            margin: 0 auto;
+            //设置搜索种类
+            .search-type {
+                padding: 0 20px;
+                //设置选项卡
+                .select {
+                    position: relative;
+                    display: inline-block;
+                    .kind{
+                        input{
+                            display: block;
+                            line-height: 40px;
+                            height: 40px;
+                            background-color: transparent;
+                            padding: 0px;
+                            padding-right: 30px;
+                            margin: 0px;
+                            border: 0px;
+                            font-size: 19px;
+                            font-weight: 500;
+                            color: #FAFAFA;
+                            width: 70px;
+                            outline: 0;
+                        }
+                        .search-dropdown-menu{
+                            display: none;
+                            height: 0;
+                            min-width: 70px;
+                            max-height: 150px;
+                            background-color: #fff;
+                            position: absolute;
+                            z-index: 20;
+                            border: 1px solid #E4E7ED;
+                            margin-top: 12px;
+                            border-radius: 4px;
+                            transition: 200ms;
+                            .arrow{
+                                position: absolute;
+                                width: 0;
+                                height: 0;
+                                border-width: 6px;
+                                border-style: solid;
+                                border-top-width: 0;
+                                border-color: transparent;
+                                border-bottom-color: #E4E7ED;
+                                top: -6px;
+                                left: -30px;
+                                right: 0;
+                                margin: auto;
+                                &:after{
+                                    position: absolute;
+                                    display: block;
+                                    content: " ";
+                                    width: 0;
+                                    height: 0;
+                                    border-width: 6px;
+                                    border-style: solid;
+                                    border-top-width: 0;
+                                    top: 1px;
+                                    left: -6px;
+                                    border-color: transparent;
+                                    border-bottom-color: #fff;
+                                }
+                            }
+                            .dropdown-menus{
+                                min-width: 70px;
+                                max-height: 150px;
+                                height: 100%;
+                                overflow: scroll;
+                                .dropdown-list{
+                                    padding: 6px 0;
+                                    margin: 0;
+                                    -webkit-box-sizing: border-box;
+                                    box-sizing: border-box;
+                                    li{
+                                        font-size: 14px;
+                                        padding: 0 20px;
+                                        position: relative;
+                                        white-space: nowrap;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        color: #606266;
+                                        height: 34px;
+                                        line-height: 34px;
+                                        -webkit-box-sizing: border-box;
+                                        box-sizing: border-box;
+                                        cursor: pointer;
+                                    }
+                                    li.active{
+                                        font-weight: 700;
+                                        color: #409EFF;
+                                        background-color: #F5F7FA;
+                                    }
+                                }
+                            }
+                        }
+                        .dropdown-on{
+                            display: block;
+                            animation: on 300ms linear forwards;
+                        }
+                    }
+                    i{
+                        line-height: 40px;
+                        position: absolute;
+                        top: 0px;
+                        -webkit-transition: all .3s;
+                        height: 100%;
+                        color: #C0C4CC;
+                        text-align: center;
+                        right: 5px;
+                        transition: all .3s;
+                    }
+                    i.rotate-up{
+                        animation: rotateUP 300ms ease forwards;
+                    }
+                    i.rotate-down{
+                        animation: rotateDown 300ms ease forwards;
+                    }
+                }
+                
+                .result {
+                    float: right;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 40px;
+                    color: #fafafa;
+                    opacity: .7;
+                }
+            }
+            
+            //设置搜索框
+            .search-input {
+                position: relative;
+                
+                .search-text {
+                    position: relative;
+                    font-size: 14px;
+                    display: inline-block;
+                    width: 100%;
+                    
+                    input {
+                        display: block;
+                        line-height: 40px;
+                        width: 100%;
+                        padding: 0px 30px;
+                        color: #AFAFAF;
+                        margin: 0px;
+                        border: 0px;
+                        font-size: 15px;
+                        background: #FFFFFF;
+                        box-shadow: 0px 2px 9px rgb(0 0 0 / 6%);
+                        border-radius: 39px;
+                        font-weight: 500;
+                        outline: 0;
+                    }
+                }
+                
+                i {
+                    position: absolute;
+                    font-size: 17px;
+                    right: 10px;
+                    top: 12px;
+                    color: #666;
+                    cursor: pointer;
+                }
+            }
+            
+            //设置热门搜索
+            .hot-words{
+                margin-top: 17px;
+                .text{
+                    span{
+                        font-size: 15px;
+                        font-weight: 400;
+                        color: #FAFAFA;
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .content-wrapper {
+        background-color: transparent;
+    }
+}
+
+@keyframes rotateUP {
+    100%{
+        transform: rotate(-180deg);
+    }
+
+}
+@keyframes rotateDown {
+    0%{
+        transform: rotate(-180deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+    
+}

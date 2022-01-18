@@ -7,7 +7,7 @@ body {
     background-color: rgb(245, 245, 245);
 }
 
-a, span, a:hover {
+a, a:hover {
     color: #666;
     text-decoration: none;
 }

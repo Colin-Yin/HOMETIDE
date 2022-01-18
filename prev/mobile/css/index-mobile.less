@@ -1,0 +1,583 @@
+
+//设置主要框体容器
+section {
+    position: relative;
+    margin-top: 70px;
+    
+    .main_title {
+        margin-bottom: 20px;
+        padding: 0px 5%;
+    }
+    
+    //一号轮播框
+    .top-big-slide {
+        .swiper-slide {
+            img {
+                width: 100%;
+            }
+            .text{
+                position: relative;
+                height: 40px;
+                width: 100%;
+                background-color: rgba(51,51,51,0.9);
+                bottom: 0px;
+                left: 0px;
+                padding: 0px 0px 0px 20px;
+                margin: 0px;
+                z-index: 1000;
+                p{
+                    font-family: 'MicrosoftYaHei-Bold', '微软雅黑 Bold', '微软雅黑', '苹方', sans-serif;
+                    font-weight: 700;
+                    font-size: 0.6em;
+                    color: #FFFFFF;
+                    text-align: left;
+                    line-height: 40px;
+                    height: 40px;
+                    width: 90%;
+                    padding: 0px;
+                    margin: 0px;
+                }
+            }
+        }
+    
+        .swiper-pagination {
+            position: relative;
+            bottom: 0;
+        }
+    }
+    
+    //二号轮播框
+    .top-small-slide {
+        .swiper-slide {
+            a {
+                display: flex;
+                justify-content: space-around;
+                
+                & > img {
+                    display: flex;
+                    flex-direction: row;
+                    height: 100px;
+                    width: 150px;
+                }
+            }
+        }
+    }
+    
+    //设置快讯,业界资讯,专题外部容器
+    .content-wrapper {
+        box-sizing: border-box;
+        background-color: #fff;
+    }
+    .main_title{
+        .body {
+            padding: 0px 15px 20px 15px;
+            //设置标题容器
+            .title {
+                border-bottom: 1px solid rgb(209, 209, 209);
+                height: 70px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                padding-top: 20px;
+            
+                //设置标题背景logo
+                .title-back {
+                    font-size: 18px;
+                    font-weight: 700;
+                    text-align: center;
+                    margin: 0 auto;
+                    width: 110px;
+                }
+            
+                //设置更多链接按钮
+                .more {
+                    text-align: right;
+                    float: right;
+                    height: 28px;
+                    line-height: 28px;
+                }
+            }
+        
+            //设置快讯容器内部
+            .alerts-content {
+                height: 690px;
+                width: 100%;
+                overflow: hidden;
+                //快讯链接容器
+                .alerts-list {
+                    width: 90%;
+                    margin: 0 auto;
+                    height: 1640px;
+                    animation: fast 16.4s linear infinite;
+                
+                    .item {
+                        margin-top: 30px;
+                        //快讯链接
+                        .alerts-link {
+                            /*display: -webkit-inline-box;
+                            display: -ms-inline-flexbox;
+                            display: inline-flex;
+                            -webkit-box-orient: horizontal;
+                            -webkit-box-direction: normal;
+                            -ms-flex-direction: row;
+                            flex-direction: row;
+                            -webkit-box-align: center;
+                            -ms-flex-align: center;
+                            align-items: center;
+                            justify-content: center;
+                            vertical-align: middle;
+                            position: relative;
+                            text-decoration: none;
+                            outline: 0;
+                            padding: 0;*/
+                            font-weight: 500;
+                            font-size: 14px;
+                            //快讯链接内容
+                            .link-inner {
+                                //快讯标题
+                                .fast-title {
+                                    width: 270px;
+                                    height: 50px;
+                                    line-height: 50px;
+                                    position: relative;
+                                
+                                    .title-img {
+                                        width: 50px;
+                                        height: 50px;
+                                        position: relative;
+                                    
+                                        img {
+                                            width: 37px;
+                                            height: 37px;
+                                            border-radius: 50%;
+                                            position: absolute;
+                                            top: 6px;
+                                            left: 5px;
+                                            vertical-align: top;
+                                        }
+                                    }
+                                
+                                    .title-text {
+                                        display: inline-block;
+                                        line-height: 20px;
+                                        width: 120px;
+                                        font-family: 'MicrosoftYaHei', '微软雅黑', sans-serif;
+                                        font-size: 13px;
+                                        position: absolute;
+                                        left: 50px;
+                                        top: 15px;
+                                    }
+                                
+                                    .time {
+                                        position: absolute;
+                                        top: 0px;
+                                        right: 0px;
+                                        color: rgb(204, 204, 204);
+                                    }
+                                }
+                            
+                                .fast-content {
+                                    width: 100%;
+                                    height: 88px;
+                                    background-color: rgb(245, 245, 245);
+                                    line-height: 24px;
+                                    padding: 10px;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    display: -webkit-box;
+                                    -webkit-box-orient: vertical;
+                                    -webkit-line-clamp: 3;
+                                
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        
+            //设置业界资讯容器边框
+            .industry-alerts {
+                border: none;
+            }
+        
+            //设置业界资讯切换栏
+            .alerts-classification {
+                margin-bottom: 30px;
+            
+                .all {
+                    margin-left: 20px;
+                }
+            
+                .select {
+                    display: inline-block;
+                    width: 70px;
+                    height: 24px;
+                    line-height: 24px;
+                    border-radius: 10px;
+                    text-align: center;
+                    padding: 0px;
+                    margin: 0px;
+                    border-color: rgb(228, 228, 228);
+                
+                    .dropdown{
+                        display: none;
+                        height: 0;
+                        min-width: 70px;
+                        max-height: 274px;
+                        background-color: #fff;
+                        position: absolute;
+                        z-index: 20;
+                        border: 1px solid #E4E7ED;
+                        margin-top: 12px;
+                        border-radius: 4px;
+                        transition: 200ms;
+                    
+                        .arrow{
+                            position: absolute;
+                            width: 0;
+                            height: 0;
+                            /* 设置四个方向的边框 */
+                            border-width: 6px;
+                            border-style: solid;
+                            /* 去除上边框 */
+                            border-top-width: 0;
+                            border-color: transparent;
+                            /* 设置下边框颜色 */
+                            border-bottom-color: #E4E7ED;
+                            top: -6px;
+                            left: -30px;
+                            right: 0;
+                            margin: auto;
+                            &:after{
+                                border-color: transparent;
+                            }
+                            &:after{
+                                position: absolute;
+                                display: block;
+                                content: " ";
+                                width: 0;
+                                height: 0;
+                                border-width: 6px;
+                                border-style: solid;
+                                border-bottom-color: #fff;
+                                border-top-width: 0;
+                                top: 1px;
+                                left: -6px;
+                            }
+                        }
+                    
+                        .dropdown-menus{
+                            min-width: 70px;
+                            max-height: 274px;
+                            height: 100%;
+                            overflow: scroll;
+                            .dropdown-list{
+                                padding: 6px 0;
+                                margin: 0;
+                                -webkit-box-sizing: border-box;
+                                box-sizing: border-box;
+                                .active{
+                                    background-color: #F5F7FA;
+                                }
+                                li{
+                                    font-size: 14px;
+                                    padding: 0 20px;
+                                    position: relative;
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    color: #606266;
+                                    height: 34px;
+                                    line-height: 34px;
+                                    -webkit-box-sizing: border-box;
+                                    box-sizing: border-box;
+                                    cursor: pointer;
+                                    text-align: left;
+                                }
+                            }
+                        }
+                    }
+                
+                    .dropdown-on{
+                        display: block;
+                        animation: on 200ms linear forwards;
+                    }
+                }
+            
+                & > div {
+                    border: 1px solid rgb(228, 228, 228);
+                }
+            }
+        
+            //设置业界资讯容器内部
+            .industry-alerts-wrapper {
+                padding-left: 10px;
+            
+                .media {
+                    margin-bottom: 20px;
+                    height: 110px;
+                
+                    .media-img {
+                        width: 40%;
+                        height: 110px;
+                        overflow: hidden;
+                        position: relative;
+                        padding-right: 0px;
+                    
+                        img {
+                            width: 100%;
+                            height: 110px;
+                        }
+                    }
+                
+                    .media-text {
+                        padding: 0px 15px;
+                    
+                        .media-heading {
+                            color: #666;
+                            font-weight: 700;
+                            height: 70px;
+                            font-size: 18px;
+                            text-align: left;
+                            line-height: 35px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 2;
+                            font-family: 'MicrosoftYaHei-Bold', '微软雅黑 Bold', '微软雅黑', '苹方', sans-serif;
+                        }
+                    
+                        .media-time {
+                            height: 35px;
+                            line-height: 35px;
+                            color: rgb(204, 204, 204);
+                        }
+                    }
+                }
+            }
+        
+            //设置业界资讯容器底部链接按钮
+            .foot-link {
+                height: 35px;
+                margin: 20px auto;
+            
+                .all {
+                    height: 35px;
+                    width: 120px;
+                    color: #EBAD3A;
+                    line-height: 35px;
+                    text-align: center;
+                    border-radius: 60px;
+                    margin: 0px auto;
+                    border: 3px solid #EBAD3A;
+                
+                    a {
+                        display: block;
+                        height: 29px;
+                        line-height: 29px;
+                        color: #EBAD3A;
+                        font-size: 16px;
+                    }
+                }
+            }
+        
+            //设置专题列表 subject-list
+            .subject-list {
+                //height: 190px;
+                margin-top: 20px;
+            
+                .item {
+                    display: inline-block;
+                    text-align: center;
+                }
+            
+                .subject-title {
+                    margin: 0 auto;
+                    height: 30px;
+                    line-height: 30px;
+                    position: relative;
+                    display: inline-block;
+                    overflow: hidden;
+                
+                    img {
+                        width: 104px;
+                        height: 24px;
+                    }
+                }
+            
+                .subject-content-img {
+                    height: 160px;
+                    display: inline-block;
+                    position: relative;
+                    overflow: hidden;
+                
+                    img {
+                        height: 160px;
+                        width: 100%;
+                        vertical-align: top;
+                    }
+                }
+            }
+        
+        }
+    }
+    
+    //设置智库容器
+    .knowledge-wrapper {
+        .content-wrapper {
+            background-color: rgb(245, 245, 245);
+            
+            .knowledge-title {
+                border: none;
+                
+                div.title-back {
+                    width: 171px !important;
+                }
+            }
+            
+            .knowledge-list{
+                & > div{
+                    margin-right: 2%;
+                    margin-bottom: 20px;
+                    width: 48%;
+                    padding: 0;
+                }
+                .item{
+                    overflow: hidden;
+                    height: 210px;
+                    width: 100%;
+                    background-color: transparent;
+                    position: relative;
+                    border: none;
+                    box-sizing: border-box;
+                    img{
+                        //position: absolute;
+                        //z-index: -1;
+                        width: 100%;
+                        height: 210px;
+                    }
+                    
+                    
+                }
+                .item-info{
+                    position: absolute;
+                    align-self: center;
+                    padding: 32px 20px 20px 20px;
+                    box-sizing: border-box;
+                    width: 90%;
+                    left: 5%;
+                    top: 18%;
+                    color: #333333;
+                    text-align: left;
+                    line-height: 22px;
+                    background-color: rgba(245, 245, 245,0.7);
+                    p{
+                        margin: 0 0 10px;
+                    }
+                    .text{
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 2;
+                        font-family: MicrosoftYaHei-Bold, "微软雅黑 Bold", '微软雅黑', '苹方', sans-serif;
+                        font-weight: 700;
+                    }
+                    .cut-line{
+                        font-size: 20px;
+                    }
+                    .time{
+                        font-family: MicrosoftYaHei-Bold, "微软雅黑 Bold", '微软雅黑', '苹方', sans-serif;
+                        font-weight: 250;
+                    }
+                }
+            }
+        }
+    }
+    
+    //设置底部轮播框容器
+    .foot-slide {
+        .swiper-slide {
+            img {
+                width: 100%;
+                height: 150px;
+            }
+        }
+        
+        .swiper-pagination {
+            position: relative;
+            bottom: 0;
+        }
+    }
+    
+    //设置宣传视频
+    .promotional-video{
+        video{
+            width: 100%;
+        }
+    }
+}
+
+//设置回到顶部按钮
+.back-top{
+    position: fixed;
+    right: 0px;
+    bottom: 86px;
+    background-color: #FFF;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 20px;
+    -webkit-box-shadow: 0 0 6px rgb(0 0 0 / 12%);
+    box-shadow: 0 0 6px rgb(0 0 0 / 12%);
+    cursor: pointer;
+    z-index: 5;
+    &>div{
+        background-color: #f2f5f6;
+        box-shadow: 0 0 6px rgb(0 0 0 / 12%);
+        text-align: center;
+        width: 55px;
+        height: 55px;
+        i{
+            height: 20px;
+            width: 20px;
+            font-size: 16px;
+            margin: 10px 0px 5px 0px;
+            background-color: #CCCCCC;
+            color: white;
+            border-radius: 50%;
+        }
+        p{
+            font-size: 12px;
+            color: #CCCCCC;
+        }
+    }
+}
+
+//设置快讯轮播动画
+@keyframes fast {
+    0% {
+        margin-top: 0px;
+    }
+    100% {
+        margin-top: -820px;
+    }
+}
+
+@keyframes on {
+    0%{
+        opacity: 0;
+        height: 0;
+    }
+    100%{
+        opacity: 1;
+        height: 275px;
+    }
+}
+

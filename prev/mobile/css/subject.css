@@ -1,0 +1,35 @@
+section .head-nav {
+  margin-bottom: 5px;
+}
+section .head-nav .breadcrumb {
+  padding: 0;
+  margin-bottom: 0;
+}
+section .head-nav .breadcrumb li {
+  font-weight: 400;
+  color: #606266;
+}
+section .head-nav .breadcrumb li:before {
+  font-weight: 700;
+}
+section .head-nav .breadcrumb li a {
+  font-weight: 700;
+  color: #303133;
+}
+section .main_title .body {
+  padding: 0;
+}
+section .main_title .body .subject-list {
+  margin-top: 0;
+}
+section .main_title .body .item {
+  padding: 0px 15px 0px 15px;
+  margin-bottom: 20px;
+}
+section .main_title .body .item .subject-content-img {
+  height: unset;
+}
+section .main_title .body .item .subject-content-img img {
+  height: 200px;
+}
+/*# sourceMappingURL=subject.css.map */
